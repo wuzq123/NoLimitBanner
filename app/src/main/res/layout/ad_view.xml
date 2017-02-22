@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.wzq.nolimitbanner.widget.ViewFlow
+            android:id="@+id/viewFlow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:padding="3dp">
+
+            <com.wzq.nolimitbanner.widget.CircleFlowIndicator
+                android:id="@+id/circleFlowIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:padding="2dp"
+                app:activeColor="#ff0000"
+                app:activeType="fill"
+                app:circleSeparation="20dp"
+                app:inactiveColor="#ffffff"
+                app:inactiveType="fill"
+                app:radius="4dp"
+                />
+        </FrameLayout>
+
+    </FrameLayout>
+
+
+</RelativeLayout>
